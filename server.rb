@@ -22,3 +22,7 @@ get '/favourites' do
   @fav_links = ['http://www.google.com', 'http://www.facebook.com', 'https://ruby-doc.org']
   erb :favourites
 end
+
+get '/gallery' do
+  redirect to ('/portfolio')
+end
